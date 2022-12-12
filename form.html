@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Davit Dgebuadze For Web Development Assignment-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Davit's Personal Portfolio</title>
+</head>
+<header>
+    <h1>Davit's Portfolio</h1>
+    <div class="navflexcontainer"></div>
+    <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="table.html">table</a></li>
+        <li><a href="images.html">images</a></li>
+        <li><a href="form.html">form</a></li>
+    </ul>
+    </nav>
+    <li class="socials">
+        <a href="facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+    </li>
+</header>
+
+<body>
+    <div class="maincontainer">
+        <form action="/DgebuadzeDavitInClassWebsiteV1/form.html" method="get">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">What service do you need?</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Front end service</option>
+                        <option value="canada">back end service</option>
+                        <option value="usa">Database Administration</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Explain what kind of technical problem do you have?</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+                <div>
+                    <label for="Pass">Ever used our service before? </label>
+                    <input type="checkbox" id="Pass" checked />
+
+                </div>
+                <div>
+                    <label for="Pass">Do you agree to use tour information after submiting </label>
+                    <input type="checkbox" id="Pass" checked />
+
+                </div>
+            </div>
+            <br>
+            <div class="col-25">
+                <label for="appt">Choose a time for your meeting:</label>
+            </div>
+            <div class="col-75">
+                <input type="datetime-local">
+            </div>
+            <small>keep in mind We use Google meet for meeting</small>
+            <br>
+            <input type="radio" name="price" id="price" value="300" />agree
+            <input type="radio" name="price" id="price" value="400" />disagree
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+
+         <button onclick="topFunction()" id="SC-1">Back to TOP</button>
+        <footer>
+            <div class="footercontainer"> &#169; Davit Dgebuadze | <a class="contact" href = "mailto: davit.dgebuadze@student.sl.on.ca">Davit.dgebuadze@student.sl.on.ca</a>
+                <p>Built Personal Portfolio Page For Web Development Assigment.</p>
+                <script>document.write(new Date().toLocaleString('default', { month: 'long', day: 'numeric', year: 'numeric' }))</script>
+           
+            </div>
+
+        </footer>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
